@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/profile.css" />
+    <script type="module" src="/js/profile.js"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <img src="/images/account.jpg" alt="Main page logo" class="logo" />
+        <div class="navbar" id="nav">
+          <a href="./mainpage.html">Home</a>
+          <a href="./friends.html">My friends</a>
+          <div class="dropdown">
+            <button class="dropbtn">My account
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="./profile.html">Profile</a>
+              <a href=./login.html>Log out</a>
+            </div>
+          </div>
+          <a href="#" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="card__border">
+                <div class="card__perfil">
+                    <img src="/images/profile2.png" alt="card image" class="card__img">
+                </div>
+            </div>
+            <h3 class="card__name"></h3>
+            <span class="card__profession"></span>
+
+            <div class="info">
+                <div class="info__icon">
+                    <i class="ri-information-line"></i>
+                </div>
+                <div class="info__border">
+                    <div class="info__perfil">
+                        <img src="/images/profile2.png" alt="card image" class="info__img">
+                    </div>
+                </div>
+                <div class="info__data">
+                    <h3 class="info__name">Full name</h3>
+                    <a href="#">Change your photo</a>
+                </div>
+
+                <div class="info__social">
+                    <a href="#" class="info__social-link">
+                        <span class="info__social-icon">
+                            <i class="ri-github-fill"></i>
+                        </span>
+                    </a>
+
+                    <a href="#" class="info__social-link">
+                        <span class="info__social-icon">
+                            <i class="ri-twitter-fill"></i>
+                        </span>
+                    </a>
+
+                    <a href="#" class="info__social-link">
+                        <span class="info__social-icon">
+                            <i class="ri-instagram-fill"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

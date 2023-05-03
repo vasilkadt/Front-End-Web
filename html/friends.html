@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/friends.css" />
+    <script type="module" src="/js/friends.js"></script>
+    <title>Friends</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <img src="/images/meeting.jpg" alt="Main page logo" class="logo" />
+        <div class="navbar" id="nav">
+          <a href="./mainpage.html">Home</a>
+          <a href="./friends.html">My friends</a>
+          <div class="dropdown">
+            <button class="dropbtn">My account
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="./profile.html" id="theme">Profile</a>
+              <a href=./login.html>Log out</a>
+            </div>
+          </div>
+          <a href="#" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+
+      <main class="main-wrapper">
+
+        <aside id="aside-friends">
+          <h1>My friends:</h1>
+          <div class="friends-list">
+          <div>
+            <input id="friend-input" placeholder="Type username..." />
+            <button class="material-symbols-outlined">Send request</button>
+          </div>
+          <div>
+            <button class="material-symbols-outlined">All friends</button>
+            <button class="material-symbols-outlined">Friend requests</button>
+          </div>
+          <ul id="list">
+          </ul>
+        </div>
+        </aside>
+
+        <div id="container">
+            <h2>You can see your friends meetings here:</h2>
+            <span id="choosen-friend"></span>
+            <ul id="meetings-list">
+            </ul>
+        </div>
+    
+    
+      </main>
+    
+</body>
+</html>

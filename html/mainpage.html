@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/styles/mainpage.css" />
+  <script type="module" src="/js/mainpage.js"></script>
+  <title>Main Page</title>
+</head>
+
+<body>
+
+  <nav class="main-nav">
+    <img src="/images/home.jpg" alt="Main page logo" class="logo" />
+    <div class="navbar" id="nav">
+      <a href="./mainpage.html">Home</a>
+      <a href="./friends.html">My friends</a>
+      <div class="dropdown">
+        <button class="dropbtn">My account
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="./profile.html" id="theme">Profile</a>
+          <a href=./login.html>Log out</a>
+        </div>
+      </div>
+      <a href="#" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <main class="main-wrapper">
+
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button class="calendar-btn" id="backButton">Back</button>
+          <button class="calendar-btn" id="nextButton">Next</button>
+        </div>
+      </div>
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>New Meeting</h2>
+      <div class="meeting-info">
+        <input id="eventTitleInput" placeholder="Meeting Title...." required />
+        <label class="meeting-time">Start time: </label>
+        <input class="meeting-time" type="time" id="eventTime" required>
+        <label class="meeting-time">End time: </label>
+        <input class="meeting-time" type="time" id="eventTime" required>
+        <label class="meeting-time" for="participants">Participants:</label>
+        <select class="meeting-time" id="participants" multiple>
+        </select>
+      </div>
+      <button class="calendar-btn" id="saveButton">Save</button>
+      <button class="calendar-btn" id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Meeting</h2>
+      <ul id="eventText"></ul> 
+      <button class="calendar-btn" id="addButton">Add new meeting</button>
+      <button class="calendar-btn" id="closeButton">Close</button>
+    </div>
+
+    <aside>
+      <h1>Pending meetings:</h1>
+      <ul id="list">
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="timeline">
+    </div>
+  </footer>
+
+</body>
+
+</html>

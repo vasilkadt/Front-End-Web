@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script type="module" src="/js/login.js"></script>
+    <script type="module" src="/js/signup.js"></script>
+    <link rel="stylesheet" href="/styles/startPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+  </head>
+
+  <body>
+    <form class="form">
+      <h1 class="main-header">Welcome to My Diary</h1>
+      <h6><span>Sign In</span><span>Sign Up</span></h6>
+      <input class="checkbox" type="checkbox" id="slider" />
+      <label for="slider"></label>
+      <div class="card-3d-wrap">
+        <div class="card-3d-wrapper">
+          <div class="card-front">
+            <h4 class="h4">Sign In</h4>
+            <div class="center-wrap">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-style login-user"
+                  placeholder="Your Email"
+                  required
+                />
+                <i class="input-icon uil-at"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-style login-user"
+                  placeholder="Your Password"
+                  required
+                />
+                <i class="input-icon uil-lock-alt"></i>
+              </div>
+              <button class="btn">submit</button>
+              <p><a href="#0" class="link">Forgot your password?</a></p>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4 class="h4">Sign Up</h4>
+            <div class="center-wrap">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-style signup-user"
+                  placeholder="Your Full Name"
+                  required
+                />
+                <i class="input-icon uil-user"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-style signup-user"
+                  placeholder="Your Email"
+                  required
+                />
+                <i class="input-icon uil-at"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-style signup-user"
+                  placeholder="Your Password"
+                  required
+                />
+                <i class="input-icon uil-lock-alt"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-style signup-user"
+                  placeholder="Repeat Password"
+                  required
+                />
+                <i class="input-icon uil-lock-alt"></i>
+              </div>
+              <button class="btn">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
